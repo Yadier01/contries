@@ -63,7 +63,7 @@ export default function page({ params }: any) {
             <h3 className="font-semibold">Border Countries: </h3>
             <ul className="grid grid-cols-3 lg:flex flex-wrap  gap-3 ">
               {country?.borders?.map((item) => (
-                <li className=" p-1 text-center shadow-md lg:w-20 bg-white text-black">
+                <li key={item} className=" p-1 text-center shadow-md lg:w-20 bg-white text-black">
                   {item}
                 </li>
               ))}
